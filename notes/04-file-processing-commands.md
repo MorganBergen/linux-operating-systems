@@ -333,3 +333,64 @@ pertinent options include
    12670  100118 3384012 total
 ```
 
+##  assessment
+
+question 1 -  how many text files are there in the `week4assessment` directory  
+
+`$ ls week4assessment | wc -l` $\rightarrow$ `7`
+
+answer 1 -  7
+
+question 2 -  read `file1`.  what is the message?  
+
+`$ cat file1` $\rightarrow$ `You're doing good so far, keep going.`
+
+answer 2 -  `You're doing good so far, keep going.`
+
+question 3 -  which of the text files in the `week4assessment` directory is the smallest?  
+
+`$ ls -l week4assessment | sort -k 5` $\rightarrow$ `file2`
+
+answer 3 -  `file2`
+
+question 4 -  read the file identified in question 3.  what is the message?  
+
+`$ cat file2` $\rightarrow$ `This really isn't much of a file.`
+
+answer 4 -  `This really isn't much of a file.`
+
+question 5 -  which of the following is the `md5` message digest of `file5` in the `week4assessment` directory?  
+
+`$ md5sum file5` $\rightarrow$ `eae77731cf3ad3a33235e0b2011e4116 file5`
+
+answer 5 -  `eae77731cf3ad3a33235e0b2011e4116`
+
+question 6 -  which of the following is the largest file in the `week4assessment` directory?  
+
+`$ ls -l week4assessment | sort -k 5` $\rightarrow$ `file6`
+
+answer 6 -  `file6`
+
+question 7 -  what is the file type of the file you identified in question 6?  
+
+`$ file file6` $\rightarrow$ `ELF 32-bit LSB Executable`
+
+answer 7 -  `ELF 32-bit LSB Executable`
+
+question 8 -  how many words are in `file4` in the `week4assessment` directory?  
+
+`$  wc -w file4` $\rightarrow$ `8 file4` 
+
+answer 8 -  `8`
+
+question 9 -  how many characters are in `file4` in the `week4assessment` directory?  
+
+`$ wc -m file4` $\rightarrow$ `38 file4`
+
+answer 9 -  `38`
+
+question 10 -  read the first line in `/snap/core20/2318/usr/share/info/grep.info.gz`.  what version of `makeinfo` produced the file?
+
+`$ zcat grep.info.gz | head -n 1` $\rightarrow$ `GNU makeinfo 6.15` 
+
+answer 10 -  `GNU makeinfo 6.5` 
