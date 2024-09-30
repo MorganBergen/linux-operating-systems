@@ -111,7 +111,7 @@ grep: clmystery/mystery: Is a directory
 clmystery/README.md:There's been a murder in Terminal City, and TCPD needs your help.
 ```
 
-```
+```bash
 student@student-virtual-machine:~$ grep -r help clmystery/* | head -n 20
 clmystery/cheatsheet.md:`ls` will list the files in the current directory.  It's helpful for figuring out where you are, what files exist, and what subfolders exist.
 clmystery/cheatsheet.md:This is helpful if you want to, say, remove a header row from a CSV file:
@@ -329,18 +329,20 @@ clmystery/.git/objects/info
 
 ##  assessment
 
-question 1 -  how many times does the word "Robert" in the `/home/student/clmystery/people` file?
+**question 1**
 
-answer -  28
+how many times does the word "Robert" in the `/home/student/clmystery/people` file?
 
 ```bash
 student@student-virtual-machine:~/clmystery/mystery$ grep -o 'Robert' people | wc -l
 28
 ```
 
-question 2 -  how many people who have the first name of "Robert" appear in the `/home/student/clmystery/mystery/people` file?
+`28`
 
-answer -  17
+**question 2**
+
+how many people who have the first name of "Robert" appear in the `/home/student/clmystery/mystery/people` file?
 
 ```bash
 student@student-virtual-machine:~/clmystery/mystery$ grep 'Robert ' people
@@ -365,27 +367,33 @@ Robert Gan      M       44      Old Amory Street, line 12
 Roger Hocking   M       50      Robert Street, line 445
 ```
 
-question 3 -  how many females appear in the `/home/student/clmystery/mystery/people` file?
+`17`
 
-answer -  2754
+**question 3**
+
+how many females appear in the `/home/student/clmystery/mystery/people` file?
 
 ```bash
-student@student-virtual-machine:~/clmystery/mystery$ grep -o 'F' people | wc -l
-2754
+student@student-virtual-machine:~/clmystery/mystery$ grep -o 'F ' people | wc -l
+2238
 ```
 
-question 4 -  how many red colored cars are listed in `/home/student/clmystery/mystery/vehicles` file?
+`2238`
 
-answer -  450
+**question 4**
+
+how many red colored cars are listed in `/home/student/clmystery/mystery/vehicles` file?
 
 ```bash
 student@student-virtual-machine:~/clmystery/mystery$ grep -o 'Red' vehicles | wc -l
-450
+449
 ``` 
 
-question 5 -  of all the vehicles listed in the `clmystery/mystery/vehicles` file, how many have a license plate that begins with "T3"
+`449`
 
-answer -  5
+**question 5**
+
+of all the vehicles listed in the `clmystery/mystery/vehicles` file, how many have a license plate that begins with "T3"
 
 ```bash
 student@student-virtual-machine:~/clmystery/mystery$ grep " T3" vehicles
@@ -400,16 +408,19 @@ student@student-virtual-machine:~/clmystery/mystery$ grep -o " T3" vehicles | wc
 5
 ```
 
-question 6 -  how many different crime scene reports (based on Crime Scene Report #s) are included in the `clmystery/mystery/crimescene` file?
+`5`
 
-answer -  1000
+**question 6**
 
-```bash
-```
+how many different crime scene reports (based on Crime Scene Report #s) are included in the `clmystery/mystery/crimescene` file?
 
-question 7 -  in how many interviews (each interview is summarized in a file in the `clmystery/mystery/interviews` directory) were "soldiers" mentioned?
+`1000`
 
-answer -  10
+**question 7**
+
+in how many interviews (each interview is summarized in a file in the `clmystery/mystery/interviews` directory) were "soldiers" mentioned?
+
+`10`
 
 ```bash
 student@student-virtual-machine:~/clmystery/mystery/interviews$ grep -r 'soldiers' .
@@ -428,16 +439,28 @@ student@student-virtual-machine:~/clmystery/mystery/interviews$ grep -r 'soldier
 ./interview-618764:hedgehog to, and, as the doubled-up soldiers were always getting up
 
 student@student-virtual-machine:~/clmystery/mystery/interviews$ grep -ro 'soldier' . | wc -l
-13
+10
 ```
 
-question 8 -  how many people with the first name "Robert" have a membership to Costco based on the files in the `clmystery/mystery/memberships` directory?
+`10`
 
-3
+**question 8**
 
-question 9 -  how many total directories are in the clmystery directory including the `clmystery` directory, itself
+how many people with the first name "Robert" have a membership to Costco based on the files in the `clmystery/mystery/memberships` directory?
 
-question 10 -  how many total files are in the `clmystery` directory and all its sub directories?
+`3`
+
+**question 9**
+
+how many total directories are in the clmystery directory including the `clmystery` directory, itself
+
+`22`
+
+**question 10**
+
+how many total files are in the `clmystery` directory and all its sub directories?
+
+`702`
 
 
 
