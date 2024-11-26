@@ -1,6 +1,6 @@
 # Linux Operating Systems
 
-##  Notes
+##  Content
 
 [01 introduction](./notes/01-introduction.md)
 
@@ -13,6 +13,14 @@
 [05 search commands](./notes/05-search-commands.md)
 
 [06 file permission commands](./notes/06-file-permission-commands.md)
+
+[07 process commands](./notes/07-process-commands.md)
+
+[08 network commands](./notes/08-network-commands.md)
+
+[10 dns commands](./notes/10-dns-commands.md)
+
+[11 internet interaction via cli](./notes/11-internet.md)
 
 ##  Description
 
